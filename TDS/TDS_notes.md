@@ -1,7 +1,7 @@
 ## Contents
 1. [Module 1: Discover the data](#module-1-discover-the-data)
 2. [Module 2: Get the data](#module-2-get-the-data)
-3. [Module 3: Prepare the data]()
+3. [Module 3: Prepare the data](#module-3-prepare-the-data)
 4. [Module 4a: Model the data]()
 
 
@@ -36,16 +36,23 @@ Following resources are helpful:
    Check out [PyDocs](https://docs.python.org/3/library/json.html), watch video by [Socratica](https://www.youtube.com/watch?v=pTT7HMqDnJw)
 2. [urllib.parse](https://pymotw.com/3/urllib.parse/index.html)  
    Check out [PyDocs](https://docs.python.org/3/library/urllib.parse.html), watch video by [Socratica](https://www.youtube.com/watch?v=LosIGgon_KM)
-3. [os](https://pymotw.com/3/os/index.html)
+3. [os](https://pymotw.com/3/os/index.html)  
    Check out [PyDocs](https://docs.python.org/3/library/os.html), watch video by [Corey Schafer](https://www.youtube.com/watch?v=tJxcKyFMTGo)
-4. [regex](https://pymotw.com/3/re/index.html)
+4. [regex](https://pymotw.com/3/re/index.html)  
    Check out [PyDocs](https://docs.python.org/3/library/re.html), watch video by [Corey Schafer](https://www.youtube.com/watch?v=K8L6KVGG-7o)
-5. 
+5. [datetime](https://pymotw.com/3/datetime/index.html)  
+   Check out [PyDocs](https://docs.python.org/3/library/datetime.html), watch video by [Socratica](https://www.youtube.com/watch?v=RjMbCUpvIgw)
+6. [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/#quick-start)  
+   Check out video by [freeCodeCamp](https://www.youtube.com/watch?v=XVv6mJpFOb0) , [Corey Schafer](https://www.youtube.com/watch?v=ng2o98k983k), [Keith Galli](https://www.youtube.com/watch?v=GjKQ6V_ViQE)
+7. [Requests](https://docs.python-requests.org/en/latest/user/quickstart/)  
+   Check out video by [Corey Schafer](https://www.youtube.com/watch?v=tb8gHvYlCFs) 
+8. [Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)  
+   Check out video by [Keith Galli](https://www.youtube.com/watch?v=vmEHCJofslg)
+9. [Scrapy](https://docs.scrapy.org/en/latest/)  
+   Check out video by [Rooney](https://youtu.be/s4jtkzHhLzY)
 
 
-
-
-
+## Module 3: Prepare the data
 
 
 
