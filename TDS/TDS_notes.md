@@ -30,3 +30,29 @@ Types of datavalues:
 currency)
 
 ## Module 2: Get the data
+We mostly download, scrape or query data to get it. Scraping may always not be legal.
+Following resources are helpful:
+1. [JSON](https://pymotw.com/3/json/index.html)  
+   Check out [PyDocs](https://docs.python.org/3/library/json.html), watch video by [Socratica](https://www.youtube.com/watch?v=pTT7HMqDnJw)
+2. [urllib.parse](https://pymotw.com/3/urllib.parse/index.html)  
+   Check out [PyDocs](https://docs.python.org/3/library/urllib.parse.html), watch video by [Socratica](https://www.youtube.com/watch?v=LosIGgon_KM)
+3. [os](https://pymotw.com/3/os/index.html)
+   Check out [PyDocs](https://docs.python.org/3/library/os.html), watch video by [Corey Schafer](https://www.youtube.com/watch?v=tJxcKyFMTGo)
+4. [regex](https://pymotw.com/3/re/index.html)
+   Check out [PyDocs](https://docs.python.org/3/library/re.html), watch video by [Corey Schafer](https://www.youtube.com/watch?v=K8L6KVGG-7o)
+5. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
