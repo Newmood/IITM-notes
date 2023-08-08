@@ -50,8 +50,12 @@ Following resources are helpful:
    Check out video by [Keith Galli](https://www.youtube.com/watch?v=vmEHCJofslg)
 9. [Scrapy](https://docs.scrapy.org/en/latest/)  
    Check out video by [Rooney](https://youtu.be/s4jtkzHhLzY)
+10. [Tabula](https://tabula-py.readthedocs.io/en/latest/tabula.html)  
+   Check out scraping pdfs using tabula: [Video by Journalists toolbox](https://www.youtube.com/watch?v=z896oxmp5Qw)
+11. [Chrome webscraper extension](https://chrome.google.com/webstore/detail/web-scraper-free-web-scra/jnhgnonknehpejjnehehllkliplmbmhn)  
+   Watch a tutorial [video](https://www.youtube.com/watch?v=aClnnoQK9G0)
 
-
+A great resource : [Journalist Toolbox](https://journaliststoolbox.org/), See also [OpenSecrets](https://www.opensecrets.org/)
 ## Module 3: Prepare the data
 
 
