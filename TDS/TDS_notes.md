@@ -56,8 +56,13 @@ Following resources are helpful:
    Watch a tutorial [video](https://www.youtube.com/watch?v=aClnnoQK9G0)
 
 A great resource : [Journalist Toolbox](https://journaliststoolbox.org/), See also [OpenSecrets](https://www.opensecrets.org/)
-## Module 3: Prepare the data
 
+## Module 3: Prepare the data
+This section we look at cleaning and transform data using excel and python.
+
+Links:
+1. [pdftotext](http://www.xpdfreader.com/pdftotext-man.html)
+2. [Openrefine](https://openrefine.org/)
 
 
 
