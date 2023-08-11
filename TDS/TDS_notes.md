@@ -5,7 +5,7 @@ Mostly links to refer to for each section.
 2. [Module 2: Get the data](#module-2-get-the-data)
 3. [Module 3: Prepare the data](#module-3-prepare-the-data)
 4. [Module 4a: Model the data](#module-4a-model-the-data)
-
+5. [Module 4b: Model the data](#module-4b-model-the-data)
 
 ## Module 1: Discover the data
 There are three types of data: 
@@ -76,6 +76,9 @@ Other tools to look at:
 
 
 ## Module 4a: Model the data
-[Playlist](https://youtube.com/playlist?list=PLUaB-1hjhk8Hyd5NiPQ9CND82vNodlFF5) for basic excel tutorials by Alex the Analyst  
-[Excel playlist](https://youtube.com/playlist?list=PL0o_zxa4K1BWYhjLZRtBWRTghtPGQwEfe) by The Organic Chemistry Tutor
+1. [Playlist](https://youtube.com/playlist?list=PLUaB-1hjhk8Hyd5NiPQ9CND82vNodlFF5) for basic excel tutorials by Alex the Analyst  
+2. [Excel playlist](https://youtube.com/playlist?list=PL0o_zxa4K1BWYhjLZRtBWRTghtPGQwEfe) by The Organic Chemistry Tutor  
+3. Talk by Anand S on [Visualizing Machine Learning](https://youtu.be/sORnCj52COw)
+4. [Statsmodels](https://www.statsmodels.org/stable/index.html) module and [playlist](https://youtube.com/playlist?list=PLlbbWgBRF8EePgK40-i7aGU2_ky1yujgL) by DS4E
 
+## Module 4b: Model the data
