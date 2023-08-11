@@ -67,8 +67,10 @@ Links:
 4. [Pillow (PIL)](https://pypi.org/project/Pillow/) : Check [documentation](https://pillow.readthedocs.io/en/stable/), [video by Corey Schafer](https://youtu.be/6Qs3wObeWwc), [video by PyMoondra](https://youtu.be/dkp4wUhCwR4)
 5. [io module](https://pymotw.com/3/io/): Check [documentation](https://docs.python.org/3/library/io.html), [video](https://youtu.be/cIaOisyd7lE)
 
-We look at image labelling and previewing images directly in excel sheets, using visual basic.
+We look at image labelling and previewing images directly in excel sheets, using visual basic.  
 
+Other tools to look at:  
+[Trifacta (Alteryx)](https://www.trifacta.com/), [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/), [KNIME](https://www.knime.com/)
 
 
 
