@@ -6,6 +6,10 @@ Mostly links to refer to for each section.
 3. [Module 3: Prepare the data](#module-3-prepare-the-data)
 4. [Module 4a: Model the data](#module-4a-model-the-data)
 5. [Module 4b: Model the data](#module-4b-model-the-data)
+6. [Module 5a: Deep Learning Models](#module-5a-deep-learning-models)
+7. [Module 5b: Deep Learning Models](#module-5b-deep-learning-models)
+8. [Module 6a: Design your output](#module-6a-design-your-output)
+9. [Module 6b: Design your output](#module-6b-design-your-output)
 
 ## Module 1: Discover the data
 There are three types of data: 
@@ -82,3 +86,21 @@ Other tools to look at:
 4. [Statsmodels](https://www.statsmodels.org/stable/index.html) module and [playlist](https://youtube.com/playlist?list=PLlbbWgBRF8EePgK40-i7aGU2_ky1yujgL) by DS4E
 
 ## Module 4b: Model the data
+1. Imbalanced classification using SMOTE: https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
+2. [PyDotPlus](https://pypi.org/project/pydotplus/): For visual representation of graph trees and networks
+3. R, Rstudio and [Rattle](https://rattle.togaware.com/) for data mining
+ 
+## Module 5a: Deep Learning Models
+
+## Module 5b: Deep Learning Models
+
+## Module 6a: Design your output
+
+## Module 6b: Design your output
+
+## Module 7: Narrate a story
+
+
+
+
+
