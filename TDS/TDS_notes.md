@@ -1,8 +1,10 @@
+Mostly links to refer to for each section.
+
 ## Contents
 1. [Module 1: Discover the data](#module-1-discover-the-data)
 2. [Module 2: Get the data](#module-2-get-the-data)
 3. [Module 3: Prepare the data](#module-3-prepare-the-data)
-4. [Module 4a: Model the data]()
+4. [Module 4a: Model the data](#module-4a-model-the-data)
 
 
 ## Module 1: Discover the data
@@ -73,6 +75,7 @@ Other tools to look at:
 [Trifacta (Alteryx)](https://www.trifacta.com/), [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/), [KNIME](https://www.knime.com/)
 
 
-
-
+## Module 4a: Model the data
+[Playlist](https://youtube.com/playlist?list=PLUaB-1hjhk8Hyd5NiPQ9CND82vNodlFF5) for basic excel tutorials by Alex the Analyst  
+[Excel playlist](https://youtube.com/playlist?list=PL0o_zxa4K1BWYhjLZRtBWRTghtPGQwEfe) by The Organic Chemistry Tutor
 
