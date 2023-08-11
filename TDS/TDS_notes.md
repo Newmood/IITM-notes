@@ -95,8 +95,19 @@ Other tools to look at:
 ## Module 5b: Deep Learning Models
 
 ## Module 6a: Design your output
+General tools:
+1. Excel forecasts and dashboards
+2. Google data studio
+3. Power BI
+4. Tableau
+   
+Specialized Tools:
+1. [Kumu](https://kumu.io/) is a tool mostly used for visualizing networks.
+2. [QGIS](https://qgis.org/en/site/) is for geographic visualizations
+3. [Flourish](https://flourish.studio/) for animated charts
 
 ## Module 6b: Design your output
+
 
 ## Module 7: Narrate a story
 
