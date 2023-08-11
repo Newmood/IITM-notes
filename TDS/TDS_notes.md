@@ -64,10 +64,10 @@ Links:
 1. [pdftotext](http://www.xpdfreader.com/pdftotext-man.html)
 2. [Openrefine](https://openrefine.org/)
 3. [Pandas Profiling](https://youtube.com/playlist?list=PL40bSdpQjo1Bvvya3cGxlpwfZ6r7h6seA) : Check out [video by Data Professor](https://youtu.be/Ef169VELt5o)
-4. [Pillow (PIL)](https://pypi.org/project/Pillow/) : Check [documentation](https://pillow.readthedocs.io/en/stable/), [video by PyMoondra](https://youtu.be/dkp4wUhCwR4)
+4. [Pillow (PIL)](https://pypi.org/project/Pillow/) : Check [documentation](https://pillow.readthedocs.io/en/stable/), [video by Corey Schafer](https://youtu.be/6Qs3wObeWwc), [video by PyMoondra](https://youtu.be/dkp4wUhCwR4)
 5. [io module](https://pymotw.com/3/io/): Check [documentation](https://docs.python.org/3/library/io.html), [video](https://youtu.be/cIaOisyd7lE)
 
-
+We look at image labelling and previewing images directly in excel sheets, using visual basic.
 
 
 
