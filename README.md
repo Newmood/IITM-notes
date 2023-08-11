@@ -2,7 +2,6 @@
 
 To be added:
 1. MLT notes pdf
-2. TDS notes
 3. DBMS short notes pdf
 
 ### To be added in coming MLT version notes
