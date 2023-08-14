@@ -89,6 +89,8 @@ Other tools to look at:
 1. Imbalanced classification using SMOTE: https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
 2. [PyDotPlus](https://pypi.org/project/pydotplus/): For visual representation of graph trees and networks
 3. R, Rstudio and [Rattle](https://rattle.togaware.com/) for data mining
+4. [PyCaret](https://pycaret.org/) : Low code ML library in python, also see [this guide for PyCaret](https://pycaret.gitbook.io/docs/)
+5. [Shap(Shapely additive explanations library)](https://shap.readthedocs.io/en/latest/)
  
 ## Module 5a: Deep Learning Models
 
