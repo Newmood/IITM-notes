@@ -93,6 +93,11 @@ Other tools to look at:
 5. [Shap(Shapely additive explanations library)](https://shap.readthedocs.io/en/latest/)
  
 ## Module 5a: Deep Learning Models
+1. [Excel Azure Machine Learning](https://appsource.microsoft.com/en-us/product/office/wa104379638?tab=overview) for sentiment analysis
+2. [Spacy](https://spacy.io/) : NLP library for sentiment analysis
+3. [GeoPandas](https://geopandas.org/en/stable/)  
+   Heres an interesteing [read](https://www.learndatasci.com/tutorials/geospatial-data-python-geopandas-shapely/).
+
 
 ## Module 5b: Deep Learning Models
 
