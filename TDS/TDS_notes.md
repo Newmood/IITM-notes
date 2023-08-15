@@ -97,7 +97,7 @@ Other tools to look at:
 2. [Spacy](https://spacy.io/) : NLP library for sentiment analysis
 3. [GeoPandas](https://geopandas.org/en/stable/)  
    Heres an interesteing [read](https://www.learndatasci.com/tutorials/geospatial-data-python-geopandas-shapely/).
-
+4. [Folium](https://python-visualization.github.io/folium/) : Visualise and manipulate maps
 
 ## Module 5b: Deep Learning Models
 
