@@ -10,6 +10,8 @@ Mostly links to refer to for each section.
 7. [Module 5b: Deep Learning Models](#module-5b-deep-learning-models)
 8. [Module 6a: Design your output](#module-6a-design-your-output)
 9. [Module 6b: Design your output](#module-6b-design-your-output)
+10. [Module 7: Narrate a story](#module-7-narrate-a-story)
+11. [Module 8: Deploy the results](#module-8-deploy-the-results)
 
 ## Module 1: Discover the data
 There are three types of data: 
@@ -122,6 +124,4 @@ Specialized Tools:
 ## Module 7: Narrate a story
 
 
-
-
-
+## Module 8: Deploy the results
