@@ -100,7 +100,10 @@ Other tools to look at:
 4. [Folium](https://python-visualization.github.io/folium/) : Visualise and manipulate maps
 
 ## Module 5b: Deep Learning Models
-
+1. [QGIS](https://www.qgis.org/en/site/) : Geospatial analysis
+2. [DIVA-GIS](https://www.diva-gis.org/) : Free GIS data
+3. [Google Cloud AutoML](https://cloud.google.com/automl/)
+   
 ## Module 6a: Design your output
 General tools:
 1. Excel forecasts and dashboards
