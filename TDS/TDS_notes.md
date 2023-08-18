@@ -1,4 +1,4 @@
-Mostly links to refer to for each section.
+There is not much of notes, mostly links to refer to for each section.
 
 ## Contents
 1. [Module 1: Discover the data](#module-1-discover-the-data)
@@ -119,6 +119,15 @@ Specialized Tools:
 3. [Flourish](https://flourish.studio/) for animated charts
 
 ## Module 7: Narrate a story
-
+1. Extension: Narratives for tableau, Quill
+2. Narratives in PowerBI
+3. Comic narratives, can get characters from [Comicgen by gramener](https://gramener.com/comicgen/)
 
 ## Module 8: Deploy the results
+Three general steps:
+1. Anonymize data  
+   Can use tools like ARX, Amnesia and libraries like faker, Mimesis
+3. Build App  
+   Can use notebooks (colab, kaggle), data app (streamlit, shiny), Web app (Falsk, tornado)
+5. Host app
+   Direct content by upload in github/dropbox, or host in Heroku/Glitch
