@@ -8,10 +8,9 @@ Mostly links to refer to for each section.
 5. [Module 4b: Model the data](#module-4b-model-the-data)
 6. [Module 5a: Deep Learning Models](#module-5a-deep-learning-models)
 7. [Module 5b: Deep Learning Models](#module-5b-deep-learning-models)
-8. [Module 6a: Design your output](#module-6a-design-your-output)
-9. [Module 6b: Design your output](#module-6b-design-your-output)
-10. [Module 7: Narrate a story](#module-7-narrate-a-story)
-11. [Module 8: Deploy the results](#module-8-deploy-the-results)
+8. [Module 6a,6b: Design your output](#module-6a-6b-design-your-output)
+9. [Module 7: Narrate a story](#module-7-narrate-a-story)
+10. [Module 8: Deploy the results](#module-8-deploy-the-results)
 
 ## Module 1: Discover the data
 There are three types of data: 
@@ -106,20 +105,18 @@ Other tools to look at:
 2. [DIVA-GIS](https://www.diva-gis.org/) : Free GIS data
 3. [Google Cloud AutoML](https://cloud.google.com/automl/)
    
-## Module 6a: Design your output
+## Module 6a, 6b: Design your output
 General tools:
 1. Excel forecasts and dashboards
 2. Google data studio
 3. Power BI
 4. Tableau
-   
+5. D3.js
+
 Specialized Tools:
 1. [Kumu](https://kumu.io/) is a tool mostly used for visualizing networks.
 2. [QGIS](https://qgis.org/en/site/) is for geographic visualizations
 3. [Flourish](https://flourish.studio/) for animated charts
-
-## Module 6b: Design your output
-
 
 ## Module 7: Narrate a story
 
