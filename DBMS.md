@@ -1,8 +1,9 @@
 Resources to refer to, topicwise in order with BSCS2001 Database Management Systems
 
-Books to follow along: 
+Resources to follow along: 
 1. [KSS:  : Database System Concepts by Korth, Silberschatz, Sudarshan](https://db-book.com/)
 2. [RG: Database Management Systems by Ramakrishnan and Gerhke](https://pages.cs.wisc.edu/~dbbook/)
+3. [CMU DB 15-445/645](https://15445.courses.cs.cmu.edu/fall2022/schedule.html)
 
 # Contents
 1. [Introduction to DBMS](#introduction-to-dbms)
@@ -16,8 +17,12 @@ Books to follow along:
 9. [Optimization](#optimization)
 
 ## Introduction to DBMS
+Quick review: [CMU DB Notes Lecture 1](https://15445.courses.cs.cmu.edu/fall2022/notes/01-introduction.pdf)
+Reading: KSS Chapter 1, RG Chapter 1
 
 ## Relational model and SQL
+Quick review: [CMU DB Notes Lecture 2](https://15445.courses.cs.cmu.edu/fall2022/notes/02-modernsql.pdf)
+Reading: KSS: Chapter 2,3,4,5
 
 ## Database Design
 
