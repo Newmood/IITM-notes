@@ -17,23 +17,34 @@ Resources to follow along:
 9. [Optimization](#optimization)
 
 ## Introduction to DBMS
-Quick review: [CMU DB Notes Lecture 1](https://15445.courses.cs.cmu.edu/fall2022/notes/01-introduction.pdf)
-Reading: KSS Chapter 1, RG Chapter 1
+- Quick review: [CMU DB Notes Lecture 1](https://15445.courses.cs.cmu.edu/fall2022/notes/01-introduction.pdf)
+- Reading: KSS Chapter 1, RG Chapter 1
 
 ## Relational model and SQL
-Quick review: [CMU DB Notes Lecture 2](https://15445.courses.cs.cmu.edu/fall2022/notes/02-modernsql.pdf)
-Reading: KSS: Chapter 2,3,4,5
+#### SQL
+- Quick review: [CMU DB Notes Lecture 2](https://15445.courses.cs.cmu.edu/fall2022/notes/02-modernsql.pdf)
+- Reading: KSS Chapter 2,3,4,5
+#### Relational Algebra, TRC, DRC
+- Reading: KSS Chapter 6; RG Chapter 4
 
 ## Database Design
+- Reading: KSS Chapter 7, RG Chapter 2
 
 ## Dependency and Normal Forms
+- Reading: KSS Chapter 8; RG Chapter 15
 
 ## Application development
+- Reading: KSS Chapter 9
 
 ## Algorithms and storage
+- Reading: KSS Chapter 10
 
 ## Indexing and Hashing
+- Reading: KSS Chapter 11
 
 ## Transaction and concurrency
+- Reading: KSS Chapter 14, 15; RG Chapter 18,19
 
 ## Optimization
+- Reading: KSS Chapter 12, 13; RG Chapter 13,14
+
