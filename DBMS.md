@@ -5,7 +5,7 @@ Resources to follow along:
 2. [RG: Database Management Systems by Ramakrishnan and Gerhke](https://pages.cs.wisc.edu/~dbbook/)
 3. [CMU DB 15-445/645](https://15445.courses.cs.cmu.edu/fall2022/schedule.html)
 
-# Contents
+# Topics
 1. [Introduction to DBMS](#introduction-to-dbms)
 2. [Relational model and SQL](#relational-model-and-SQL)
 3. [Database Design](#database-design)
@@ -19,6 +19,8 @@ Resources to follow along:
 ## Introduction to DBMS
 - Quick review: [CMU DB Notes Lecture 1](https://15445.courses.cs.cmu.edu/fall2022/notes/01-introduction.pdf)
 - Reading: KSS Chapter 1, RG Chapter 1
+
+Introducing to database management system, how it developed over the years and its advantages over flat file system. The three levels of data abstraction: Physical, Logical, View and physical data independence. Then we look at data models: relational, ER, Object-based, semi-structured models. Data languages are introduced : DDL and DML (SQL can be used for both). Approaches to database design: ER Model and Normalisation theory (we look at both later in detail). The three parts of a database engine: Sotrage manager, Query processor, Transaction manager. Closing with database architecture : centralised, client server, parallel, distributed, cloud.
 
 ## Relational model and SQL
 #### SQL
