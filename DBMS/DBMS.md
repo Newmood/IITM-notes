@@ -1,4 +1,4 @@
-Resources to refer to, topicwise in order with BSCS2001 Database Management Systems
+Topicwise in order with BSCS2001 : Database Management Systems
 
 Resources to follow along: 
 1. [KSS:  : Database System Concepts by Korth, Silberschatz, Sudarshan](https://db-book.com/)
@@ -28,6 +28,9 @@ Introducing to database management system, how it developed over the years and i
 - Reading: KSS Chapter 2,3,4,5
 #### Relational Algebra, TRC, DRC
 - Reading: KSS Chapter 6; RG Chapter 4
+
+Database Schema and Instance; Keys: Superkey, Candidate key, Primary key, Surrogate key, Secondary/Atlernate key, Simple key, Composite key, Foreign key ; Relational query languages: declarative, procedural ; Relational operators ; Domain types ; Intergrity constraints, Triggers.  And of course, a lot of SQL.
+
 
 ## Database Design
 - Reading: KSS Chapter 7, RG Chapter 2
