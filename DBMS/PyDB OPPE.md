@@ -5,7 +5,7 @@
 a = open('name.txt','r')
 name = a.read()
 ```
-In exam, txt will be in samer folder, so we dont need to write the path of txt file.
+In exam, txt will be in same folder, so we dont need to write the path of txt file.
 
 ### Connecting database
 1. Create connection
@@ -21,7 +21,7 @@ import sys
 
 database = 'flis'
 user= 'postgres'
-password = 'obsidian'
+password = 'yeayea'
 port = '5433'
 host = 'localhost'
 conn = None
@@ -47,10 +47,10 @@ import sys
 f=open('player.txt','r')
 name = f.read()
 
-#setup
+#setup (values be given)
 database = 'flis'
 user= 'postgres'
-password = 'obsidian'
+password = 'yeayea'
 port = '5433'
 host = 'localhost'
 conn = None
@@ -78,18 +78,4 @@ except(Exception,psycopg2.DatabaseError) as error:
 finally:
 	if conn is not None:
 		conn.close()
-```
-
-
-
-
-
-OPPE SQL MOCK Q8)
-![[Pasted image 20230416001913.png]]
-![[Pasted image 20230416001918.png]]
-```SQL
-select faculty_fname,faculty_lname from faculty f 
-inner join members m on m.id=f.id  
-inner join book_issue bi on bi.member_no = m.member_no 
-where doi between '2021-06-01' and '2021-06-31'
 ```
