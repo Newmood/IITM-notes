@@ -61,6 +61,7 @@ Following resources are helpful:
    Check out scraping pdfs using tabula: [Video by Journalists toolbox](https://www.youtube.com/watch?v=z896oxmp5Qw)
 11. [Chrome webscraper extension](https://chrome.google.com/webstore/detail/web-scraper-free-web-scra/jnhgnonknehpejjnehehllkliplmbmhn)  
    Watch a tutorial [video](https://www.youtube.com/watch?v=aClnnoQK9G0)
+12. [Nominatim](https://nominatim.org/)
 
 A great resource : [Journalist Toolbox](https://journaliststoolbox.org/), See also [OpenSecrets](https://www.opensecrets.org/)
 
