@@ -31,7 +31,6 @@ Introducing to database management system, how it developed over the years and i
 
 Database Schema and Instance; Keys: Superkey, Candidate key, Primary key, Surrogate key, Secondary/Atlernate key, Simple key, Composite key, Foreign key ; Relational query languages: declarative, procedural ; Relational operators ; Domain types ; Intergrity constraints, Triggers.  And of course, a lot of SQL.
 
-
 ## Database Design
 - Reading: KSS Chapter 7, RG Chapter 2
 
