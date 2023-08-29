@@ -127,7 +127,8 @@ Specialized Tools:
 ## Module 8: Deploy the results
 Three general steps:
 1. Anonymize data  
-   Can use tools like ARX, Amnesia and libraries like faker, Mimesis
+   Can use tools like ARX, Amnesia, faker, Mimesis, sdcMicro, Anonimatron
+   Statics vs interactive anonymization: https://aircloak.com/data-anonymisation-software-differences-between-static-and-interactive-anonymisation/
 3. Build App  
    Can use notebooks (colab, kaggle), data app (streamlit, shiny), Web app (Falsk, tornado)
 5. Host app
