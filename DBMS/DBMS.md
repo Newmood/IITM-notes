@@ -1,8 +1,8 @@
 Topicwise in order with BSCS2001 : Database Management Systems
 
 Resources to follow along: 
-1. [KSS:  : Database System Concepts by Korth, Silberschatz, Sudarshan](https://db-book.com/)
-2. [RG: Database Management Systems by Ramakrishnan and Gerhke](https://pages.cs.wisc.edu/~dbbook/)
+1. KSS:  : Database System Concepts by Korth, Silberschatz, Sudarshan, 6 ed
+2. RG: Database Management Systems by Ramakrishnan and Gerhke
 3. [CMU DB 15-445/645](https://15445.courses.cs.cmu.edu/fall2022/schedule.html)
 
 # Topics
