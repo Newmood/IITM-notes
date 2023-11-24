@@ -22,7 +22,7 @@ Some public data sources:
 1. [Awesome public](https://github.com/awesomedata/awesome-public-datasets)
 2. [Google dataset search](https://datasetsearch.research.google.com/)
 3. [Kaggle datasets](https://www.kaggle.com/datasets/)
-4. [Data.gov](https://data.govhttps://data.gov.in)
+4. [Data.gov](https://data.gov.in)
 5. [Datameet](https://datameet.org/)
 
 Types of datasets:
