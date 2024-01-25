@@ -5,9 +5,10 @@ Resources to follow along:
 2. RG: Database Management Systems by Ramakrishnan and Gerhke
 3. [CMU DB 15-445/645](https://15445.courses.cs.cmu.edu/fall2022/schedule.html)
 
-# Topics
+#  Contents
+1. [Week-wise](#week-wise)
 1. [Introduction to DBMS](#introduction-to-dbms)
-2. [Relational model and SQL](#relational-model-and-SQL)
+2. [Relational model and SQL](#relational-model-and-sql)
 3. [Database Design](#database-design)
 4. [Dependency and Normal Forms](#dependency-and-normal-forms)
 5. [Application development](#application-development)
@@ -15,6 +16,22 @@ Resources to follow along:
 7. [Indexing and Hashing](#indexing-and-hashing)
 8. [Transaction and concurrency](#transaction-and-concurrency)
 9. [Optimization](#optimization)
+
+## Week-wise
+| Week | Topic | Reading | Videos | Extra | 
+| ----|--------|---------|--------|-------|
+| 1 | Introduction to DBMS | - | - | - |
+| 2 | Relational Model and SQL | - | - | - |
+| 3 | More SQL | - | - | - |
+| 4 | Formal relational query languages & ER Model | - | - | - |
+| 5 | Database Design | - | - | - | 
+| 6 | Dependency and Normal Forms | - | - | - |
+| 7 | Application Development | - | - | - | 
+| 8 | Algorithms & Storage | - | - | - |
+| 9 | Indexing & Hashing | - | - | - |
+| 10 | Transaction management | - | - | - |
+| 11 | Backup and recovery | - | - | - | 
+| 12 | Query Processing Optimization | - | - | - |
 
 ## Introduction to DBMS
 - Quick review: [CMU DB Notes Lecture 1](https://15445.courses.cs.cmu.edu/fall2022/notes/01-introduction.pdf)
@@ -51,4 +68,3 @@ Database Schema and Instance; Keys: Superkey, Candidate key, Primary key, Surrog
 
 ## Optimization
 - Reading: KSS Chapter 12, 13; RG Chapter 13,14
-
