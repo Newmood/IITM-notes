@@ -1,9 +1,8 @@
 # IITM-notes
 
-To be added:
+## To be added:
 
 1. MLT notes pdf
-2. Java Notes
 3. Mathematics Notes : Linear Algebra, Calculus, Optimization
 4. Statistics Notes : Introduction, Distributions, Limit theorems, Hypothesis Testing
 
@@ -15,3 +14,12 @@ To be added:
 
 ### DBMS notes
 Write brief overview of topics and attach important videos and reading links.
+
+# Contents
+| Course |
+|:------:|
+| [Python](./Python_IITM/python_notes.md)  |  
+| [TDS](./TDS/TDS_notes.md) |
+| [DBMS](./DBMS/DBMS.md) |
+| [PDSA](./PDSA/main.md) |
+| [Java](./java-stuff/main.md) |

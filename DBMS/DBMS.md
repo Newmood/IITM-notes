@@ -48,6 +48,8 @@ Introducing to database management system, how it developed over the years and i
 
 Database Schema and Instance; Keys: Superkey, Candidate key, Primary key, Surrogate key, Secondary/Atlernate key, Simple key, Composite key, Foreign key ; Relational query languages: declarative, procedural ; Relational operators ; Domain types ; Intergrity constraints, Triggers.  And of course, a lot of SQL.
 
+## ER diagram and formal relational query languages
+
 ## Database Design
 - Reading: KSS Chapter 7, RG Chapter 2
 
@@ -65,6 +67,8 @@ Database Schema and Instance; Keys: Superkey, Candidate key, Primary key, Surrog
 
 ## Transaction and concurrency
 - Reading: KSS Chapter 14, 15; RG Chapter 18,19
+
+## Backup and Recovery
 
 ## Optimization
 - Reading: KSS Chapter 12, 13; RG Chapter 13,14
