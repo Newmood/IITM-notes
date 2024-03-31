@@ -25,8 +25,8 @@ In $A$, first the operation is done with integers `2 & 3`, the output is casted 
 
 ### Constants
 Section 1.3 : [Mathematical functions](./java-files/MathFunction.java)  
- Constants in java are defined using `final` keyword, as they are immutable.
+ Constants in java are defined using `final` keyword, as they are immutable. Declared inside body of the class and not functions.
 
 >    When we declare a variable as `final`, it means that the reference to the object it points to cannot be changed once initialized. However, it doesn't mean that the object itself (if it's mutable) cannot be modified.  
-In the code file, the declaration of `One` as local variable in method overshadows the one declared at `class`. Hence, `Three2` outputs `4`.
+In the code file [MathFunction](./java-files/MathFunction.java), the declaration of `One` as local variable in method overshadows the one declared at `class`. Hence, `Three2` outputs `4`.
 
