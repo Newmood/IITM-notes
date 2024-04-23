@@ -33,7 +33,7 @@ Improve on the base prompt. The process is very important. For example once we g
 3. Extract important points from a large pieces of text.
 
 ## 05-Transforming
-Chatgpt is good at translating and even transform as an fictitious character, tone transforming, formatting, checking grammar.
+Chatgpt is good at translating and even transform as a fictitious character, tone transforming, formatting, checking grammar.
 
 ## 06-Expanding
 Create large text from short pieces by adjusting temperature. Lower temparature is more reliable.
