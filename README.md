@@ -1,5 +1,15 @@
 # IITM-notes
 
+# Contents
+| Course | Code |  
+|:------:|:----:|
+| [Python](./Python_IITM/python_notes.md)  | BSCS1001 |
+| [TDS](./TDS/TDS_notes.md) | BSSE2002 |
+| [DBMS](./DBMS/DBMS.md) | BSCS2001 |
+| [PDSA](./PDSA/main.md) | BSCS2002 |
+| [Java](./java-stuff/main.md) | - |
+| [Java IITM](./java-stuff/java-files-IITM/main.md) | BSCS2005 |
+
 ## To be added:
 
 1. MLT notes pdf
@@ -15,12 +25,4 @@
 ### DBMS notes
 Write brief overview of topics and attach important videos and reading links.
 
-# Contents
-| Course |
-|:------:|
-| [Python](./Python_IITM/python_notes.md)  |  
-| [TDS](./TDS/TDS_notes.md) |
-| [DBMS](./DBMS/DBMS.md) |
-| [PDSA](./PDSA/main.md) |
-| [Java](./java-stuff/main.md) |  
-| [Java IITM](./java-stuff/java-files-IITM/main.md) |
+
