@@ -1,6 +1,5 @@
 # jupyter checkpoints
-Python_IITM/.ipynb_checkpoints/
-PDSA/.ipynb_checkpoints/
+.ipynb_checkpoints
 
 # java class files
 java-stuff/java-files/*.class
