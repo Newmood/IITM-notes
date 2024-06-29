@@ -2,7 +2,6 @@
 
 A list of resources:
 - Link to all screencasts in the course: [click here](https://thejeshgn.com/projects/modern-application-development-1/)
-- [Book] TCP/IP Illustrated, Volume 1 by W. Richard Stevens
 - [Internetting is Hard](https://internetingishard.netlify.app/)
 - [High performance Browser Networking](https://hpbn.co/)
 - [MDN docs](https://developer.mozilla.org/en-US/)
@@ -25,7 +24,17 @@ There are many platforms to make apps for such as Desktop, Mobile, Web-based and
 
 ## 1.1. Network architecture:  
 1. Client-server :  
-2. Peer-to-peer :
+    -
+    - Well defined client and server applications, a server receives, processes, computes and responds back to the client. 
+    - Clients are end users requesting data from server. (Note that client and server can as well be in same system, for a local network.)
+    - Could be multiple servers, single queue, mutiple queues, load balancing frontend. 
+    - Example : Email, databses, FTP, streaming sites.
+2. Peer-to-peer/ Distributed  
+    - 
+    - Each application acts as both client and server. It sends and receives requests, respond if able to or forward to another peer.
+    - More fault tolerant
+    - Information/ data is shared among peers.
+    - Examples: BitTorrent, Tahoe, Blockchain systems
 
 ## 1.2. Software architecture
 There are many design patterns : MVC, MVA, MVP, MVV, PAC etc. 
@@ -41,13 +50,18 @@ This course focuses on MVC architecture.
 ## 1.3. How does the web work
 **Packet switching:** Packets of digital information comprising some nuber of bytes are carried through the network somewhat independently. These chunks may come from different sources can be multiplexed (mixed together and pulled apart later). When a packet reaches a switch it is stored in a temp memory queue and prcessed as FIFO basis.
 
-Advanced Research Projects Agency Network  (**ARPANET**) is the first wide area packet-swtiched network to implement the TCP/IP suite, which is the technical foundation of Internet.
+Advanced Research Projects Agency Network  (**ARPANET**, 1969) is the first wide area packet-swtiched network to implement the TCP/IP suite, which is the technical foundation of Internet.
 
-Web 1.0/1.1 : 
+Web 1.0 
+: Read only web, static HTML documents. Minimal styling with inline CSS. Very minimal interactive elements..
 
-Web 2.0 :
+Web 1.1 
+: Dynamic content genration (introduction to srver side scripting using CGI, PHP, ASP), database integration, HTTP/1.0 standardized request-response communication with each request requiring new communication, increased interactivity.
 
-TCP/IP protocol suite consists of 5 layers (compared to 7 in OSI model) specifying how end-to-end data communication should occur.
+Web 2.0 (2004 - present)
+: Adoption of HTTP/1.1 and later HTTP/2, client side scripting (JS) and asynchronous communication (AJAX), rich UI-UX, dynamic content (AJAX, Websockets), significant API usage (RESTful APIs).
+
+TCP/IP protocol suite (1980s) consists of 5 layers (compared to 7 in OSI model) specifying how end-to-end data communication should occur.
 - **Internet Protocol, IP  :** A  connectionless network layer protocol. It does addressing (assigning IP addresses to devices), routing (determinins path for data packets), fragmentation and reassmbly of packets, encapsulation (encapsulating data into packets.)
  - **Transmission Control Protocol, TCP :**  Connection oriented transport layer protocol, deals with flow control, errors (such as packet loss, acknowledge received packets), duplication, packet reordering (if not done by IP layer). It does not preserve message boundaries.
  - **User Datagram Protocol, UDP :** Connectionless network layer protocol, preserves message boundaries, allows to send datagram but does not guarantee receiving at other end, hence reliability is handled by application layer. UDP provides port numbers for multiplexing and demultiplexing and integrity checksums.
@@ -64,12 +78,61 @@ IPv6
 
 
 
-## 1.4. Web server, HTTP, resquests, ports, curl, status codes
+## 1.4. Web server and requests
+A web server is a system that processes HTTP requests and serves web content to clients over internet. HTTP (Hypertext Transfer Protocol) is an application-layer protocol used for transmitting hypermedia documents, such as HTML. It defines how messages are formatted and transmitted between clients and servers.
+
+Example of a simple web server, write the following in a file name it `server.sh`:  
+```sh  
+#!/bin/bash
+
+while true; do
+	echo -e "HTTP/1.1 200 OK\n\n $(date)" |
+		nc -l localhost 1500;
+done 
+```
+Run the following commands one by one:
+1. Run the server : `bash server.sh`  
+2. This sends a custom request to the server we created above : `$ curl http://localhost:1500`  
+3. To be more verbose :  `$ curl -v http://localhost:1500`
+
+Typical request looks like the following:
+```
+GET / HTTP/1.1
+Host: localhost:1500
+User-Agent: curl/7.64.1
+Accept: */* 
+```
+The `*/*` means it accepts MIME type (Multipurpose Internet Mail extension)
+
+Typical response looks like:
+```
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 1500 (#0)
+> GET / HTTP/1.1
+> Host: localhost:1500
+> User-Agent: curl/7.64.1
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+* no chunk, no close, no size. Assume close to signal end
+<
+ Thu Jun 17 08:14:55 IST 2021
+ ```
+Status codes are issues are indicative of how the request was handled.
 
 ## 1.5. Protocols, GET ,POST
+Protocol
+: A protocol is a set of rules governing communication, ensuring proper formatting, transmission and reception.
+
+HTTP (Hypertext Transfer Protocol) is an application-layer protocol used for transmitting hypermedia documents, such as HTML. It is stateless, each request is independent. (make stateful by use of cookies/client session ID/token authenticatoin).
+- GET: simple requests, search queries etc.
+- POST: submit complex form of data, files etc.
+- PUT: Update existing data. (more use in Web2.0)
+- DELETE: Remove data. (more use in Web2.0)
 
 ## 1.6. Website performance
-### Latency 
+### Latency :  
 Latency is the time taken for data to pass from one point to another on a network. It is often measured as time taken to transfer data between client and data center.
 
 - Speed of light in cables ~ 2e8 m/s.  
@@ -77,9 +140,10 @@ Latency is the time taken for data to pass from one point to another on a networ
 - Round trip time (RTT) = 2* One-way Latency = 20ms in this case.
 - This limits to communication maximum of 50 requests a second.
 
-### Response size
+### Response size :
 This refers to the amount of data being transmitted back and forth between two points.  
-**Bandwidth** : amount of ata that can be transmitted per unit time. (Mbps)
+
+**Bandwidth** : Amount of ata that can be transmitted per unit time. (Mbps)
 
 $$\text{Total transfer time} = \text{Round trip time} + \dfrac{\text{Response size in bits}}{\text{Bandwidth in bits per second}}$$
 
@@ -91,7 +155,7 @@ So, in total we can handle, $\dfrac{1}{101} \times 1000 = 9.9 \approx 10$ reques
 Resource management is very necessary when working with large amounts of data to transfer and scaling to meet requirements.
 
 ## 1.7. Extra Reading & Material
-1. Read chapter 1 from TCP/IP Illustrated Vol. 1
+1. Light read chapter 1 from [Book] : _TCP/IP Illustrated, Volume 1 by W. Richard Stevens_
 2. Read about [HTTP in Launch School book](https://launchschool.com/books/http/read/making_requests#httpheaders)
 3. Watch the video : [How the Internet Works for Developers by LearnCode.Academy](https://youtu.be/e4S8zfLdLgQ)
 
