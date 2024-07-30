@@ -11,9 +11,6 @@ Book : [A Concise and Practical Introduction to Prgramming Algorithms in Java by
     - Run/Execute: `java program`
 
 Section 1.2.2: [HelloWorld program](./java-files/HelloWorld.java)  
->    terminal: `javac HelloWorld`   
-    ```error: error: Class names, 'HelloWorld', are only accepted if annotation processing is explicitly requested```  
-    To fix, run with `.java` : `javac HelloWorld.java`
 
 ### Implicit casting
 Consider example:
@@ -39,6 +36,8 @@ comment */
 ``` 
 
 ### Casting Rules
+The output of `float f=22/7;` is `3.0`.  (Implicit conversion from int to float)
+
 ![castingrules](./images/castingrules1.png)
 
 Also watch the videos: 

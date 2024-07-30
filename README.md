@@ -1,4 +1,5 @@
-# IITM-notes
+# IITM-
+This is more of my own PKM than notes to help others, but if you find it useful.
 
 # Contents
 | Course | Code |  
