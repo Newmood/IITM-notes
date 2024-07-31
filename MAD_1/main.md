@@ -12,7 +12,8 @@ A list of resources:
 |----|------|
 | [Week-1](#week-1) | Architecture, Protocols, HTTP requests, Web performance <br> <ol> <li>[Tutorial 1.1 : Replit for MAD1](https://youtu.be/tWA2FT4i4cY)</li> <li>Screencast 1.1  Serve HTML files on LAN </li></ol> |
 | [Week-2](#week-2) | Encoding, HTML, CSS |  
-| [Week-3](#week-3) |  |  
+| [Week-3](#week-3) |  Design principles |
+
 
 
 
@@ -197,4 +198,47 @@ Types of markup :
 
 Quick test HTML and CSS (or JS) elements : https://pen.new and https://html.new .
 
-# Week -3
+# Week 3
+
+Start with talk about MVC as done before.
+
+### Views in MVC
+- User Interface - (screen, audio, vibration or haptic, motor)
+- User Interaction - (keyboard/mouse, touchscreen, spoken voice, custom buttons)
+    - Determine by hardware constraints and different target devices
+    - User agent information useful to identify contents
+- Views could be fully static, partially dynamic, fully dynamic.
+
+### User Interface Design
+- Goals :
+    - Simple : easy for user to understand and use
+    - Efficient : user achieves goal with minimal efforts
+- Aesthetics : Use standards liked by most people with the help of libraries like bootstrap.
+- Accesibility : Inclusive to everyone
+
+### Systematic Process
+- Functionality requirements gathering - what is needed?
+- Use and Task analysis - user preferences, task needs
+- Prototyping - wireframes/mockups
+- Testing - user acceptance, usability, accessibility
+
+### Usability Heuristics
+
+- [Jakob Nielsen's usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- The above is not only for web-apps but general design principle.
+
+### Tools
+- Wireframes 
+    - visual guide to represent structure of web page
+    - informatoin design/ navigation design, UI design
+    - [Licud Chart](https://www.lucidchart.com/pages) , [Figma](https://www.figma.com/)
+- HTML 
+    - Tools for automatic generation - pyhtml, jinja2 
+
+### Accessibility
+- Page made to be accessible even for peopl with vision, speech, touch, sensory-motor impairments.
+- [Accessiblity Principles](https://www.w3.org/WAI/fundamentals/accessibility-principles/)
+- Using `aria-describedby` property
+
+
+# Week 4
