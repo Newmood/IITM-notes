@@ -11,7 +11,9 @@ A list of resources:
 | Content | Topics |
 |----|------|
 | [Week-1](#week-1) | Architecture, Protocols, HTTP requests, Web performance <br> <ol> <li>[Tutorial 1.1 : Replit for MAD1](https://youtu.be/tWA2FT4i4cY)</li> <li>Screencast 1.1  Serve HTML files on LAN </li></ol> |
-| [Week-2](#week-2) | HTML, CSS |
+| [Week-2](#week-2) | Encoding, HTML, CSS |  
+| [Week-3](#week-3) |  |  
+
 
 
 # Week 1
@@ -161,3 +163,38 @@ Resource management is very necessary when working with large amounts of data to
 
 
 # Week 2
+## Encoding
+Read [my blogpost on encoding](https://newmood.github.io/posts/2406_encoding/).  
+**Efficiency of encoding :**
+- Depends on the document. 
+- Prefix coding and huffman coding  [Video by Reducible](https://youtu.be/B3y0RsVCyrw)
+
+### Markup :  
+Markup is a way of using cues and codes in the regular flow fo text to indiccate how text should be displayed.  
+Types of markup : 
+- Presentational -WYSIWYG (MS word, google docs)
+- Procedural - Details on how to display something (skip 2 lines, indent para)
+- Desriptive - Using the tags such as `<title>`, `<heading>` etc.
+
+### HTML
+- HTML was first used by Tim Berneres Lee at CERN (~1989)
+- SGML is a system for defining markup languages, HTML is one of the markup languages (intended for the web).
+- Use of tags and nested tags
+```html
+<em><strong> Hello </strong></em>
+```
+
+### Document Object Model (DOM)
+- DOM allows to manipulate and traverse the html page by providing a hierarchical tree of elements.
+- APIs are defined on DOM (example: canvas, offline, web storage, drag and drop etc.)
+- In most cases, manipulating DOM is done using Javascript and for styling the elements we use CSS.
+- [More about DOM](https://en.wikipedia.org/wiki/Document_Object_Model)
+
+
+### CSS
+- Used to style HTML document
+- Types: Inline (within each tag) , Internal (inside `<head>` tag) , External (separate file)
+
+Quick test HTML and CSS (or JS) elements : https://pen.new and https://html.new .
+
+# Week -3
