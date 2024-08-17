@@ -1,7 +1,9 @@
 # Contents:
 1. [Week 1](#week-1)  : Programming, memory, absraction-modularity, OOPs
 2. [Week 2](#week-2) : Basics of Java, control flow, class & objects, I/O
-2. [Week 3](#week-3) : Class hierarchy, Inhertiance, Subtype, Polymorphism
+3. [Week 3](#week-3) : Class hierarchy, Inhertiance, Subtype, Polymorphism
+3. [Week 4](#week-4) : Interfaces
+
 
 
 # Week 1
@@ -369,3 +371,132 @@ Food for thought : Given "A tree is a connected acyclic graph.", the true relati
 - These modifiers can be applied to classes, instance variables and methods
 - - Use `private static` instance variables to maintain bookkeeping information across objects in a class. Example global serial number, count number of objects created, profile method invocations etc.
 - Modifiers `static` and `final` are orthogonal to `public` or `private`.
+
+# Week 4
+we can use class hierarchy to gorup togehter related classes, providing a structure where objects of different types can be organized under a common parent. For example, geometric shapes like circles, squares, and rectangles can be grouped under a common abstract parent class `Shape`.
+
+## Abstract Classes
+- Abstract Method : An abstract method is defined without a body in the parent class forcing subclasses to implement (respective to their context). For example, `perimeter` method in abract class `Shape`.
+```java
+public abstract class Shape {
+	...
+	public abstract double perimeter();
+	...
+}
+```
+- Abstract Class : A class containing none, one or many abstract methods. Abstract classes cannot be instantiated directly; we cannot create objects of an abstract class type. However, we can declare variables of an abstract class type, which can hold references to objects of its concrete subclasses. Abstract classes may also contain concret methods.
+
+```java
+Shape shapearr[] = new Shape[3];
+int sizearr[] = new int[3];
+
+shapearr[0] = new Circle(...);
+shapearr[1] = new Square(...);
+shapearr[2] = new Rectangle(...);
+
+for(int i = 0; i < 3; ++i) {
+	sizearr[i] = shapearr[i].perimeter()
+	// Here, each shapearr[i] calls the appropriate method
+	...
+}
+```
+
+- Abstract classes can also be used to define capabilities that must be implemented by subclasses. (e.g. defining `compareTo` for enabling generic functions like sorting.)
+```java
+public abstract class Comparable {
+	public abstract int cmp(Comparable s);
+	// return -1 if this < s
+	// return 0 if this == s
+	// return 1 if this > s
+}
+```
+```java
+public class SortFunctions {
+	public static void quicksort(Comparable[] a) {
+		...
+		// Code for quicksort goes here
+		// Except that to compare a[i] and a[j], we use a[i].cmp(a[j])
+	}
+}
+```
+```java
+public class Myclass extends Comparable {
+	private double size;  // Quantity used for comparison
+
+	public int cmp(Comparable s) {
+		if(s instanceof Myclass) {
+			// Compare this.size and ((Myclass) s).size
+			// We have to cast in order to access s.size
+		}
+	}
+}
+```
+
+## Interfaces: A Specialized Abstract Class
+- Interface: A type of abstract class with no concrete methods. All methods are abstract and public.
+- Multiple Inheritance: A class can implement multiple interfaces, inheriting behaviors without method conflicts.
+- Implementation: A class implements an interface by providing concrete methods, adhering to a defined contract.
+
+```java
+public interface Comparable {
+	public abstract int cmp(Comparable s);
+}
+```
+```java
+public class Circle extends Shape implements Comparable {
+	public double perimeter() { ... }
+	public int cmp(Comparable s) { ... }
+	...
+}
+```
+
+> **NOTE: One we can extend only one class, but can implement multiple interfaces.** (This is workaround for not allowing multiple inheritance as seen earlier.)
+
+## Private Classes
+An object can have nested objects as instance variables and the structure of these nested objects should not be exposed. Private classes allow an additional degree of data encapsulation.
+
+We can combine private classes with interfaces to provide controlled access to the state of an object
+
+## Controlled interaction with Objects
+Combining private classes with interfaces in Java allows for controlled object interactions, encapsulates implementation details, enforces access restrictions, and supports state management while maintaining a clear contract through the interface.
+
+Consider a railway reservation system where querying seat availability (getStatus(int trainNo, Date date)) could be misused by bots, leading to potential denial-of-service attacks.
+
+To mitigate misuse, the system can require user login before making queries. However, changing method signatures to include user credentials is impractical instead better encapsulate. Instead, stateful objects that maintain login status and track user interactions provide a better solution.
+
+```java
+public interface QIF {
+	public abstract int getStatus(int trainno, Date d);
+}
+
+public class RailwayBooking {
+	private BookingDB railwayDB;
+	public QIF login(String u, String p) {
+		QueryObject qobj;
+		if(validLogin(u, p)) {
+			qobj = new QueryObject();
+			return qobj;
+		}
+	}
+
+	private class QueryObject implements QIF {
+		private int numQueries;
+		private final int QLIM;
+
+		public int getStatus(int trainno, Date d) {
+			if(numQueries < QLIM) {
+				// Respond, incremement numQueries
+				...
+			}
+			...
+		}
+	}
+}
+```
+
+## Callbacks
+A callback is a mechanism where a method (callback method) is passed to another method and is invoked after a specific event or operation completes. Callbacks are useful for event handling, asynchronous programming, and implementing custom behaviors in frameworks.  
+Video link : [Callbacks](https://youtu.be/CKjGnZCvlng)
+
+## Iterators
+Video link : [Iterator](https://youtu.be/BG_Btui0K1o)
