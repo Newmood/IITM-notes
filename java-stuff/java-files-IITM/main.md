@@ -1,7 +1,7 @@
-Contents:
+# Contents:
 1. [Week 1](#week-1)  : Programming, memory, absraction-modularity, OOPs
 2. [Week 2](#week-2) : Basics of Java, control flow, class & objects, I/O
-2. [Week 3](#week-3) : 
+2. [Week 3](#week-3) : Class hierarchy, Inhertiance, Subtype, Polymorphism
 
 
 # Week 1
@@ -226,3 +226,146 @@ int age = in.nextInt();
 - Formatted output `System.out.printf(arg)`
 
 # Week 3
+
+## More on OOPs
+OOP emphasizes data over algorithms improving system organization, debugging and scalability through encapsulation and class relationships.
+
+- **Data-centric approach:** OOP prioritizes data structures that is to be manipulated and then define algorithms/methods to do so. Compared to structured programming where first we think about what program should do as fntions and then design data structures to support those functions.
+- **Organization:** In sturcutred programming a series of procedures or functions are defined leading to large number of global procedures acting on shared data. While in OOPs, encapsulation is done for both data and methods on them and have a more of a modular structure.
+- **Dependencies:** In structures programming methods could be depended on global data leading to conflicts. While in OOPs, change to once class without affecting others can be done.
+- **Inheritance and Polymorphism:** In OOPs, new classes could be created on existing and hence extending and defining more functions, promoting code reuse and reduce duplication, establish parent-child relationship between classes forming hierarchies while also facilitating polymorphism.
+
+**Polymorphism** : the ability of different classes to be treated as instances of the same class through a common interface. (allowing objects of the subclass to be treated as objects of the superclass.)
+
+## Subclasses and Inheritance
+- A subclass extends a parent class and inherits instance variables and methods from the parent class.
+- A subclass can add more instance variables and methods and can also override methods. Subclasses however cannot see private components of parent class
+- **Constructor chaining:** Use `super()` to invoke parent class constructors. For example:
+```java
+public class Employee{
+    public Employee(string n, double s){
+        name=n; salary=s;
+    }
+    public Employee(string n){
+        this(n,500.00);
+    }
+}
+public class Manager extends Employee{
+    public Manager(String n, double s, String sn) { 
+        super(n, s); 
+        this.secretary = sn; 
+    }
+}
+```
+**Overloading :** It occurs when multiple methods in the same class have the same name but different parameter lists. The method called is determined at compile-time based on the argument types.
+
+**Overriding :** Occurs when a subclass provides a specific  implementation for  method that is already defined in the superclass witht he name same signature. This enables _dynamic dispatch_ where the overridde method in the subclass is called based ont he runtime of the object.
+
+**Dynamic Dispatch :** A runtime mechanim in OOP that selects the appropriate metod implementation to invoke based on the actual object's type rather than the reference type. It enables polymorphism by ensuring that the overrideden method in a subclass is executed, even when accessed through a superclass reference, allowing for flexible and extensible code behaviour.
+
+All of these — overloading, overriding, and dynamic dispatch — are ways to implement polymorphism in object-oriented programming.  
+
+### Type casting
+Suppose in our example earlier `Manager` has `setSecretary` function but we want invoke it on `e` as `e.setSecretary()` where e is:
+```java
+Employee e = new Manager(...)
+```
+
+we can do this by type casting, converting `e` to `Manager`, first as:
+```java
+Employee e = new Manager(...)
+((Manager) e).setSecretary(s)
+```
+
+Type casting is used for basic data types as well, as given in [casting rules here.](../main.md#casting-rules)
+
+
+### Notes:
+1. Superclass constructors cannot be overloaded and overridden in the subclass.  
+    - *Overloading :* Super class constructors can be overloaded within the superclass itself. Subclass an call a superclass constructor using `super()`, but it cannot overlad the superclass constructor directly, can dfine its own cosntructors.
+    - *Overriding :* Constructors cannot be overriden in subclasses, overriding applies to methods. Each class has its own constructors.
+2. Methods can be overloaded with different number, types or order of parameters.
+
+Example code snippet:
+```java
+public class A {
+    void show() {
+        System.out.println("Show without parameters");
+    }
+}
+
+public class B extends A {
+    @Override
+    void show() {  // Overriding the show() method from class A
+        System.out.println("Show in class B");
+    }
+
+    void show(int a) {  // This is an overloaded method
+        super.show();  // Calls the show() method from class A
+        System.out.println("Show with int parameter");
+    }
+
+    public static void main(String[] args) {
+        A ob = new B();  // Polymorphic behavior
+        ob.show();  // This will call the overridden show() method in class B
+    }
+}
+```
+
+## Class Hierarchies
+
+### Multiple inheritance
+Multiple inheritance is when a class inherits from more than one superclass.  Java does not support this due to _diamond problem_ (where two parent classes could methods with same signature raising ambguity in the inherited methods by child.) It is allowed in C++, Python, Java instead uses interface to achieve similar functionality.
+
+### Overriding functions
+- Suppose we have a `Date` class and wish to use `equals()` to compare object state, te following will not work:
+```java
+public boolean equals(Date d) {
+	return this.day == d.day && this.month == d.month && this.year == d.year;
+}
+```
+
+- `boolean equals(Date d)` does not override `boolean equals(Object o)`We have to instead cast it as date type first:
+
+```java
+public boolean equals(Object d){
+    if (d instanceof Date){
+        Date myd = (Date) d;
+        return ( 
+            (this.day==myd.day) && (this.month==myd.month) && (this.year==myd.year)
+        );
+    }
+    return false;
+}
+}
+```
+
+## Subtypes and Inheritance
+Class hierarchy represents both subtyping and inheritance.
+Consider the example of the following data types:
+- `queue` with methods `nset-rear`, `delete-rear`
+- `stack` with methods `insert-front`, `delete-front`
+- `deque` with methods `insert-front`, `delte-front`, `insert-rear`, `delete-rear`
+
+
+### Subtype:
+- Compatibility of interfaces. 
+- If `B` is a subtype of `A`, then every function that can be invoked on object of type `A` can also be invoked on object of type `B`
+- `deque` has more functionalities and is a subtype of both `stack` and `queue`.
+
+### Inheritance
+- Reuse of implementations
+- `B` inherits from `A` if some functions for `B` are written in terms of funtions of `A`
+- Both `queue` and `stack` inherit from `deque`
+
+Food for thought : Given "A tree is a connected acyclic graph.", the true relation is _'Graph as the main type and the tree as the subtype.'_
+
+## Java modifiers
+- Java uses many modifiers in declarations, to cover different features of object-oriented programming
+- `public` vs `private` to support encapsulation of data
+    - Usually instance variables are `private` and methods are `public`
+- `static`, for entities defined inside classes that exist without creating objects of the class
+- `final`, for values that cannot be changed. `final` method cannot be overridden by subclass.
+- These modifiers can be applied to classes, instance variables and methods
+- - Use `private static` instance variables to maintain bookkeeping information across objects in a class. Example global serial number, count number of objects created, profile method invocations etc.
+- Modifiers `static` and `final` are orthogonal to `public` or `private`.
