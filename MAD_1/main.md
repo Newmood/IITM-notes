@@ -13,6 +13,8 @@ A list of resources:
 | [Week-1](#week-1) | Architecture, Protocols, HTTP requests, Web performance <br> <ol> <li>[Tutorial 1.1 : Replit for MAD1](https://youtu.be/tWA2FT4i4cY)</li> <li>Screencast 1.1  Serve HTML files on LAN </li></ol> |
 | [Week-2](#week-2) | Encoding, HTML, CSS |  
 | [Week-3](#week-3) |  Design principles |
+| [Week-4](#week-4) |  Data Storage & Management |
+
 
 
 
@@ -231,7 +233,7 @@ Start with talk about MVC as done before.
 - Wireframes 
     - visual guide to represent structure of web page
     - informatoin design/ navigation design, UI design
-    - [Licud Chart](https://www.lucidchart.com/pages) , [Figma](https://www.figma.com/)
+    - [Lucid Chart](https://www.lucidchart.com/pages) , [Figma](https://www.figma.com/)
 - HTML 
     - Tools for automatic generation - pyhtml, jinja2 
 
@@ -242,3 +244,25 @@ Start with talk about MVC as done before.
 
 
 # Week 4
+## Structured vs Unstructured data
+### Structured :
+- Definition: Structured data refers to data that is organized into a predefined format, typically in rows and columns, making it easily searchable and analyzable.
+- Examples: Relational databases (e.g., SQL databases), CSV files.
+- Use in App Development: Structured data is ideal for applications where consistent data types, relationships, and schema enforcement are needed, such as inventory systems, user databases, or financial applications.
+
+### Unstructured :
+- Definition: Unstructured data lacks a predefined format, making it more flexible but also harder to search, manage, and analyze.
+- Examples: Text files, images, videos, emails, and social media content.
+- Use in App Development: Unstructured data is used in applications that deal with multimedia, text analysis, or social media integration, where the content varies significantly in format and structure.
+
+In app development, understanding the nature of the data helps in choosing the right storage solutions. Structured data often fits well in SQL databases, while unstructured data might require NoSQL databases, object storage, or file-based storage systems, reflecting the diverse storage needs of modern applications. NoSQL databases are better than Relational databases for storing semi structured data.
+
+### Entity Relationship Diagram (Relational)
+An ER diagram is a visual representation of the entities (objects) in a database and the relationships between them. Represents entities as tables showing column names and data types and uses Crow's foot notation for denoting relations.
+- [Watch this video on ER diagram of a database](https://www.youtube.com/watch?v=6uwuNRUUimY)
+
+> There is also traditional ER diagram with bunch of rectangles, ovals and diamonds.
+
+For more about databases, types of keys and stuff study [DBMS](../DBMS/DBMS.md)
+
+**Models :** Models refer to the representation of data entitites and their relationships in an application. It defines the structure of the data that is stored in a database, including attributes, data types and constraints. It serves as bridge enabling CRUD in database aligning with the business logic.
