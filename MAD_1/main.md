@@ -14,6 +14,8 @@ A list of resources:
 | [Week-2](#week-2) | Encoding, HTML, CSS |  
 | [Week-3](#week-3) |  Design principles |
 | [Week-4](#week-4) |  Data Storage & Management |
+| [Week-5](#week-5) |  MVC, CRUD, Controllers, Routes |
+
 
 
 
@@ -266,3 +268,100 @@ An ER diagram is a visual representation of the entities (objects) in a database
 For more about databases, types of keys and stuff study [DBMS](../DBMS/DBMS.md)
 
 **Models :** Models refer to the representation of data entitites and their relationships in an application. It defines the structure of the data that is stored in a database, including attributes, data types and constraints. It serves as bridge enabling CRUD in database aligning with the business logic.
+
+# Week 5
+
+## MVC origins
+Message from Tryvge, who came up witht he concept in 1979 while working on Smalltalk-76 is attached below:
+<blockquote>
+From: Trygve Reenskaug  
+
+Date: 10 December 1979
+
+**MODELS-VIEWS-CONTROLLERS**
+
+**MODELS**
+
+Models represent knowledge. A model could be a single object (rather uninteresting), or it could be some structure of objects. ~~The proposed implementation supports knowledge represented in something resembling *semantic nets* (If I understand Laura correctly)~~
+
+**VIEWS**
+
+A view is a (visual) representation of its model. It would ordinarily highlight certain attributes of the model and suppress others. It is thus acting as a *presentation filter*.
+
+A view is attached to its model (or model part) and gets the data necessary for the presentation from the model by asking questions. It may also update the model by sending appropriate messages. All these questions and messages have to be in the terminology of the model, the view will therefore have to know the semantics of the attributes of the model it represents. (It may, for example, ask for the model's identifier and expect an instance of Text, it may not assume that the model is of class Text)
+
+**CONTROLLERS**
+
+A controller is the link between a user and the system. It provides the user with input by arranging for relevant views to present themselves in appropriate places on the screen. It provides means for user output by presenting the user with menus or other means of giving commands and data. The controller receives such user output, translates it into the appropriate messages and pass these messages on .to one or more of the views.
+
+A controller should never supplement the views, it should for example never connect the views of nodes by drawing arrows between them.
+
+Conversely, a view should never know about user input, such as mouse operations and keystrokes. It should always be possible to write a method in a controller that sends messages to views which exactly reproduce any sequence of user commands.
+</blockquote>
+
+
+- MVC architecture was designed for GUI applcations. In web-based, the server doesn't maintain the client's state and the client is just a front-end to user. This leads to some analogies breaking down and seveeral variants of MVC being used.
+- The goal is to understand the intention behind MVC (separation of conerns) and not apply it too rigidly in development process.
+
+## Request Response
+**Dynamic Web Pages**  
+- **View**: Represents the web page.  
+- **Links**: Enable user interaction by triggering different actions.  
+- **Behavior**: Clicking links initiates various responses.
+
+**Request-Response Cycle**  
+- The web operates on client requests and server responses.  
+- **Basic Requests**: Clicking a link triggers an HTTP GET request.  
+- **Complex Requests**: Form submissions use HTTP POST.
+
+**Constraints**
+- Any page can be requested, including assignments, quizzes, and lectures.  
+- **Common Threats**: Potential vulnerabilities arise from the open nature of web requests.
+
+## CRUD 
+**Create**:  
+- Add a new entry; it must be unique to prevent conflicts.  
+- Differentiate between mandatory and optional fields (e.g., name, address).
+
+**Read**:  
+- Retrieve data, such as a student list.  
+- Summarize data (e.g., age distribution) and visualize (e.g., histograms).
+
+**Update**:  
+- Modify existing data, like updating addresses or marks.
+
+**Delete**:    
+- Remove data, such as graduated students or incorrect entries.
+
+### API - Application Programming Interface  
+- An API provides a standardized way for clients to communicate with a server. It abstracts the underlying implementation, allowing the client to interact with the server without needing to know details like database structure. 
+- CRUD is a good set of functionality for basic APIs, usually considered the first level API to implement web app.
+- While CRUD handles the core data operations and managing the data model's lifecycle, other aspects of control and functionality are also possible through extended API features.
+
+## Controllers and Routes
+### Actions vs. Controllers:
+- Actions (e.g., CRUD, sending emails, updating logs) are interactions between the view and model.  
+- Controllers logically group these actions, managing how they interact with the model and view via HTTP requests and verbs.
+
+**Summary:**
+- Controllers organize actions, while APIs define complex server capabilities.  
+- The model, view, and controller should be decoupled; changes in one shouldn't directly affect the others.  
+- Practically, views and controllers are more intertwined than models. Controllers should not directly interact with the database.
+
+### Routes and Controllers
+
+**Web Applications:**  
+- Operate on a client-server model with HTTP requests (GET, POST) and URLs to convey actions.
+- Servers are stateless, meaning they respond to requests without knowledge of the client's state.
+
+**Routing:**  
+- Maps URLs to specific actions, allowing for structured and organized request handling.
+
+**Python Decorators:**  
+- Enhances functions by adding extra functionality using "@" before the function name.  
+- They wrap another function, adding operations before execution. In Decorators, functions are passed as an argument into another function.
+- Decorators are a way to change or modify the behavior of any of the function without changing any code.
+
+**Summary:**  
+- Flask, while not natively MVC, can be organized using MVC principles.  
+- Separation of concerns and structured routing are key to maintainable design.
