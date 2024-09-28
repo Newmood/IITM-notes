@@ -11,6 +11,7 @@ This is more of my own PKM than notes to help others, but if you find it useful.
 | [Java](./java-stuff/main.md) | - |
 | [Programming Concepts using Java](./java-stuff/java-files-IITM/main.md) | BSCS2005 |
 | [Modern Application Development 1](./MAD_1/main.md) | BSCS2003 |
+| [Business Analytics](./BA/main.md) | BSCS2003 |
 
 ## To be added:
 
