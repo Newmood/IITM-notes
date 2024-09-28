@@ -15,7 +15,7 @@ A list of resources:
 | [Week-3](#week-3) |  Design principles |
 | [Week-4](#week-4) |  Data Storage & Management |
 | [Week-5](#week-5) |  MVC, CRUD, Controllers, Routes |
-
+| [Week-6](#week-6) |  API and REST |
 
 
 
@@ -365,3 +365,123 @@ Conversely, a view should never know about user input, such as mouse operations 
 **Summary:**  
 - Flask, while not natively MVC, can be organized using MVC principles.  
 - Separation of concerns and structured routing are key to maintainable design.
+
+# Week 6
+### The Web: Basics
+The web involves a **client** (e.g., browser) and a **server**, often far apart on different networks. This leads to differences in **latency, speed, and quality**. Key challenges:
+- **Authentication**: Not handled by the protocol, done externally.
+- **State**: The server doesn’t know the client’s state, and the client doesn’t know the server’s. This must be handled explicitly.
+
+### REST: Web Architecture
+
+In 2000, **Roy Fielding** introduced **REST** to address web limitations. REST is a **software architecture style** that offers guidelines for building scalable, maintainable systems.
+
+### REST Constraints
+
+1. **Client-Server**: Separate concerns. The client handles the UI; the server manages data and logic. Allows independent evolution.
+2. **Stateless**: Each request carries all necessary info. No session state stored on the server. Ensures scalability but adds request overhead.
+3. **Layered System**: Systems can be layered (e.g., for security or load balancing). Each layer is independent, increasing security and scalability.
+4. **Cacheability**: Responses indicate if caching is allowed. Reduces server load but must be managed to avoid outdated data.
+5. **Uniform Interface**: Standardized operations (e.g., GET, POST, PUT, DELETE). Simplifies client-server interaction.
+6. **Code on Demand (Optional)**: Servers can send executable code (e.g., JavaScript) to enhance client functionality without manual updates.
+
+---
+
+REST’s constraints ensure scalable, maintainable web systems, making it widely used today.
+
+### REST: Overview
+REST stands for REpresentational State Transfer, an architectural style for designing networked applications. It defines how **state information** should be transferred between the client and the server during communication. In RESTful systems, each interaction explicitly carries the state information, making it easier to manage resources without relying on the server to keep track of the client's session state.
+
+### REST Sequence:
+1. **Client accesses a Resource Identifier** (usually a URI, a superset of URLs).
+   - Typically starts at the home page.
+   - No initial state is assumed. 
+2. **Resource Operation** is part of the request (e.g., GET, POST).
+   - Not tied to any specific protocol (may not be HTTP).
+3. **Server responds** with a new Resource Identifier, reflecting the system's new state.
+
+### HTTP & REST
+**HTTP** is commonly used to carry REST messages. REST uses HTTP verbs to indicate the action:
+- **GET**: Retrieve the resource’s state.
+- **POST**: Send data for processing.
+- **PUT**: Create a resource.
+- **DELETE**: Remove a resource.
+
+**Idempotent Operations :**  Operations that yield the same result even when repeated.
+  - **GET**: Always safe, read-only.
+  - **PUT**: Creates a resource; same result each time, may error if it already exists.
+  - **DELETE**: Deletes once; subsequent attempts may error but won’t change the data.
+  - **POST**: Not idempotent (e.g., adding a comment multiple times).
+
+### CRUD Operations
+
+- **CRUD**: Create, Read, Update, Delete.
+- Common operations in web applications.
+- Often implemented using REST, but REST is more than just CRUD.
+
+### Data Encoding in REST
+These formats allow **data serialization**, useful for transferring complex data types in a text-based format.
+- **HTML**: Simple responses.
+- **XML**: Structured data format.
+- **JSON**: Simpler and widely used for structured data.
+
+
+### API Data Transfer Format
+
+- **Input**: Usually text (via HTTP).
+- **Output**: Often JSON, XML, YAML (JSON is most common).
+  - Different from internal server data representation and final user view.
+
+### YAML
+- Stands for **Yet Another Markup Language**.
+- Commonly used for documentation and configuration files.
+---
+### Authentication in APIs
+
+APIs often handle sensitive resources and need protection to prevent unauthorized access or abuse (e.g., Denial-of-Service attacks). Proper **authentication** ensures that only verified users can access or manipulate specific resources.
+
+- **Restrict Access**: Some APIs are meant only for specific users.
+- **Prevent Abuse**: Avoid server overload and ensure that requests come from genuine users.
+
+### Implementing API Authentication
+Authentication is typically handled using **tokens**, which are small pieces of data issued by the server when a user logs in. These tokens must be included in every API request to confirm the user's identity.
+
+#### Types of Authentication Tokens
+
+1. **Bearer Tokens**: Passed in the `Authorization` header and used for validating API requests.
+2. **OAuth Tokens**: Issued by third-party services like Google or Facebook after user login, used for APIs requiring third-party authentication.
+
+### API Key
+An **API key** is a simple token, issued by the server for identifying the client application. Although easy to use, it’s less secure if exposed since it can be copied and reused. Therefore, API keys should be combined with other techniques (e.g., IP restrictions).
+
+### Best Practices for API Authentication
+1. Use **secure tokens** like **OAuth** instead of plain API keys.
+2. Send tokens in **headers**, not in URLs.
+3. Implement **token expiration** and **rotation** for added security.
+4. Combine multiple methods for sensitive operations (e.g., API key + IP restrictions).
+---
+
+### APIs of Interest for Web Apps
+- **Purpose**: Implement **information hiding** — server and client should not be aware of each other’s internal details.
+- **Contract**: APIs should be **standardized** and **consistent** to avoid breaking existing implementations.
+    - Can have **version updates** with breaking changes if necessary, but avoid frequent changes.
+
+### Documentation Challenges
+- **Subjective**: Varies depending on programmer’s style.
+- **Incomplete**: One developer’s view of "important details" may differ from another.
+- **Outdated**: Documentation might lag behind the implementation.
+- **Language-Specific**: Human-readable text is often ambiguous.
+
+### Description Files
+- **Machine Readable**: Written in a format that is easy for computers to parse.
+- Enable **automated tools** like:
+  - **Boilerplate code** generation.
+  - **Mock servers** for testing.
+- **Example**: Assembly language is structured for both machine and human readability. It may not be a programming language but needs to be structured for both machine and human readability.
+
+### OpenAPI Specification (OAS)
+- **Vendor-neutral** format to define **HTTP-based remote APIs**.
+- **Focus**: Describes common API use cases efficiently rather than all possible APIs.
+- **History**: Evolved from Swagger; designed to ensure consistent API structure and documentation.
+---
+
